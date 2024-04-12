@@ -4,7 +4,7 @@
 If you want to directly run the application
 -----------------------------------------------------------------------------------------
 
-1) Download and install postgresql.
+1) Download and install postgresql on port 5432 (important).
 2) Open pgadmin4 and click on Servers on left side
 3) Let the name be PostgreSQL 16, username 'postgres' and password 'password'.
 4) Create a new database named 'FirstDatabase'
