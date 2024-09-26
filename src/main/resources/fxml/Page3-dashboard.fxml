@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.DetailedDayView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.DashboardController">
+   <children>
+      <Label layoutX="45.0" layoutY="34.0" prefHeight="40.0" prefWidth="200.0" text="Dashboard Overview" textFill="#183086">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="45.0" layoutY="85.0" prefHeight="66.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/person.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="14.0" text="Patients Today" textFill="#aeb0bc">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="patientstoday" layoutX="72.0" layoutY="34.0" text="8" textFill="#303484">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="293.0" layoutY="85.0" prefHeight="66.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/group.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="14.0" text="Total Patients" textFill="#aeb0bc">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalpatients" layoutX="72.0" layoutY="34.0" text="8" textFill="#303484">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="45.0" layoutY="178.0" prefHeight="362.0" prefWidth="450.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="91.0" text="All Patients" textFill="#183086">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox layoutY="54.0" prefHeight="30.0" prefWidth="450.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="54.0" text="No." textFill="#b3b5c1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="198.0" text="Name" textFill="#b3b5c1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Contact No." textFill="#b3b5c1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="67.0" text="Age" textFill="#b3b5c1">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane layoutY="84.0" prefHeight="278.0" prefWidth="450.0" style="-fx-background-color: #ffffff;">
+               <content>
+                  <VBox fx:id="patientinfolayout" prefHeight="278.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <DetailedDayView fx:id="detaileddayappt" layoutX="515.0" layoutY="125.0" prefHeight="414.0" prefWidth="320.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="515.0" layoutY="85.0" prefHeight="26.0" prefWidth="162.0" text="Appointments Today" textFill="#183086">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

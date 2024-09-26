@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDialog?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpatdet" prefHeight="700.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.PatDetDialogController">
+   <children>
+      <ScrollPane prefHeight="700.0" prefWidth="785.0">
+         <content>
+            <AnchorPane prefHeight="1400.0" prefWidth="785.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="24.0" prefHeight="40.0" prefWidth="142.0" text="Patient Details" textFill="#183086">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="74.0" text="Registration Date" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="patientdetregisdate" layoutX="35.0" layoutY="92.0" promptText="mm/dd/yyyy" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="132.0" text="Name" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetname" layoutX="35.0" layoutY="151.0" prefHeight="27.0" prefWidth="266.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="366.0" layoutY="132.0" text="Blood Group" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetbloodgrp" layoutX="366.0" layoutY="151.0" prefHeight="27.0" prefWidth="74.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="501.0" layoutY="132.0" text="Contact" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetcontact" layoutX="501.0" layoutY="151.0" prefHeight="27.0" prefWidth="177.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="196.0" text="Birth Date" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="patientdetbirthdate" layoutX="35.0" layoutY="215.0" promptText="mm/dd/yyyy" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="366.0" layoutY="196.0" text="Email" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetemail" layoutX="366.0" layoutY="215.0" prefHeight="27.0" prefWidth="313.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="264.0" text="Address" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="patientdetaddress" layoutX="35.0" layoutY="283.0" prefHeight="60.0" prefWidth="710.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="366.0" text="Are you experiencing/ Have you experienced any of the following? (Mark all that apply)" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="patientdetchk1" layoutX="34.0" layoutY="396.0" mnemonicParsing="false" text="Blood Pressure" />
+                  <CheckBox fx:id="patientdetchk2" layoutX="154.0" layoutY="396.0" mnemonicParsing="false" text="Diabetes" />
+                  <CheckBox fx:id="patientdetchk3" layoutX="253.0" layoutY="396.0" mnemonicParsing="false" text="Thyroid" />
+                  <CheckBox fx:id="patientdetchk4" layoutX="364.0" layoutY="396.0" mnemonicParsing="false" text="Asthma" />
+                  <CheckBox fx:id="patientdetchk5" layoutX="450.0" layoutY="396.0" mnemonicParsing="false" text="Pregnancy" />
+                  <CheckBox fx:id="patientdetchk6" layoutX="550.0" layoutY="396.0" mnemonicParsing="false" text="Heart Condition" />
+                  <CheckBox fx:id="patientdetchk7" layoutX="680.0" layoutY="396.0" mnemonicParsing="false" text="Hepatitis" />
+                  <CheckBox fx:id="patientdetchk8" layoutX="34.0" layoutY="427.0" mnemonicParsing="false" text="HIV/AIDS" />
+                  <CheckBox fx:id="patientdetchk9" layoutX="154.0" layoutY="427.0" mnemonicParsing="false" text="Cancer" />
+                  <CheckBox fx:id="patientdetchk10" layoutX="253.0" layoutY="427.0" mnemonicParsing="false" text="Fits/Epilepsy" />
+                  <CheckBox fx:id="patientdetchk11" layoutX="363.0" layoutY="427.0" mnemonicParsing="false" text="Arthritis" />
+                  <CheckBox fx:id="patientdetchk12" layoutX="450.0" layoutY="427.0" mnemonicParsing="false" text="Migraine" />
+                  <CheckBox fx:id="patientdetchk13" layoutX="550.0" layoutY="427.0" mnemonicParsing="false" text="Blood Disorder" />
+                  <CheckBox fx:id="patientdetchk14" layoutX="678.0" layoutY="427.0" mnemonicParsing="false" text="Others" />
+                  <Label layoutX="35.0" layoutY="469.0" text="Are you on any medication? (eg. Ecoprin, Insulin, etc.)" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetmedication" layoutX="357.0" layoutY="465.0" prefHeight="27.0" prefWidth="392.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="512.0" prefHeight="19.0" prefWidth="198.0" text="Are you allergic to any Medicine? " textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patientdetallergy" layoutX="357.0" layoutY="508.0" prefHeight="27.0" prefWidth="392.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Label layoutX="35.0" layoutY="553.0" text="Have you had any dental treatment before?" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="yestreatmentbefore" layoutX="354.0" layoutY="554.0" mnemonicParsing="false" text="Yes">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="treatmenthistory" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="notreatmentbefore" layoutX="450.0" layoutY="554.0" mnemonicParsing="false" text="No" toggleGroup="$treatmenthistory" />
+                  <Label layoutX="35.0" layoutY="596.0" text="Dental treatment advice for you" textFill="#6775b7">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="patientdetadvice" layoutX="35.0" layoutY="627.0" prefHeight="150.0" prefWidth="710.0" style="-fx-background-color: #ffffff; -fx-border-color: #6775b7;" />
+                  <Button fx:id="insertbtn" layoutX="645.0" layoutY="800.0" mnemonicParsing="false" onAction="#insertdetailsfunc" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF0000;" text="Insert" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane fx:id="dettetanchorpane" layoutX="34.0" layoutY="865.0" prefHeight="499.0" prefWidth="710.0">
+                     <children>
+                        <Button fx:id="addrecordbtn" layoutX="604.0" mnemonicParsing="false" onAction="#addrecordfunc" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #fc7d6e; -fx-background-radius: 10px;" text="+ Add Record" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label prefHeight="40.0" prefWidth="190.0" text="Dental Treatment Records" textFill="#183086">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutY="51.0" prefHeight="30.0" prefWidth="710.0" spacing="10.0" style="-fx-background-color: #183086;">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="70.0" text="Date" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="42.0" text="Time" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="80.0" text="Tooth No." textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="195.0" text="Treatment" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="50.0" text="Debit" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="49.0" text="Dues" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="159.0" text="Remarks" textFill="WHITE">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <ScrollPane layoutY="81.0" prefHeight="350.0" prefWidth="710.0">
+                           <content>
+                              <VBox fx:id="treatmentinfolayout" prefHeight="350.0" prefWidth="710.0" style="-fx-background-color: #DADDE2;" />
+                           </content>
+                        </ScrollPane>
+                        <Button fx:id="updatebtn" layoutX="610.0" layoutY="459.0" mnemonicParsing="false" onAction="#updatedetailsfunc" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #FF0000;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <JFXDialog fx:id="addrecdialog" />
+   </children>
+</StackPane>

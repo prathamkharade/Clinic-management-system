@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="dentethbox" prefHeight="80.0" prefWidth="710.0" style="-fx-background-color: #fc7d6e; -fx-border-color: #ffffff; -fx-border-width: 3px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.DentalTetStripController">
+   <children>
+      <Label fx:id="dentaltreatmentdate" alignment="CENTER" prefHeight="80.0" prefWidth="70.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmenttime" alignment="CENTER" prefHeight="80.0" prefWidth="57.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmenttoothno" alignment="CENTER" prefHeight="80.0" prefWidth="81.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmenttetment" alignment="CENTER" prefHeight="80.0" prefWidth="217.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmentdebit" alignment="CENTER" prefHeight="80.0" prefWidth="54.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmentdues" alignment="CENTER" prefHeight="80.0" prefWidth="55.0" text="Label" textFill="WHITE" />
+      <Label fx:id="dentaltreatmentremarks" alignment="CENTER" prefHeight="80.0" prefWidth="174.0" text="Label" textFill="WHITE" />
+   </children>
+</HBox>

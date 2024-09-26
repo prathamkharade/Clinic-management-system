@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.DoctorController">
+   <children>
+       <AnchorPane prefHeight="720.0" prefWidth="1072.0">
+           <children>
+               <ImageView fitHeight="720.0" fitWidth="1080.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@../images/medical%20desk.jpg" />
+                   </image>
+               </ImageView>
+               <TextField fx:id="id" layoutX="437.0" layoutY="267.0" prefHeight="50.0" prefWidth="206.0" promptText="Enter Username" style="-fx-background-color: #F6F5F5; -fx-border-color: #0C359E;">
+                   <font>
+                       <Font name="Rockwell Extra Bold" size="14.0" />
+                   </font>
+               </TextField>
+               <Button fx:id="btn" layoutX="489.0" layoutY="417.0" mnemonicParsing="false" onAction="#showDialog" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #0C359E;" text="Log In" textFill="WHITE" />
+            <PasswordField fx:id="password" layoutX="437.0" layoutY="335.0" prefHeight="50.0" prefWidth="206.0" promptText="Enter Password" style="-fx-background-color: #F6F5F5; -fx-border-color: #0C359E;">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="14.0" />
+               </font>
+            </PasswordField>
+           </children>
+       </AnchorPane>
+       <JFXDialog fx:id="dialog" prefHeight="300.0" prefWidth="150.0">
+           <JFXDialogLayout>
+               <body>
+                   <Label fx:id="status" />
+               </body>
+               <actions>
+                   <JFXButton fx:id="okbutton" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #FF0000;" textFill="WHITE">OK</JFXButton>
+               </actions>
+           </JFXDialogLayout>
+       </JFXDialog>
+   </children>
+</StackPane>

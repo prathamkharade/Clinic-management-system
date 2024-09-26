@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="patlisthbox" prefHeight="57.0" prefWidth="450.0" style="-fx-background-color: #f4f9ff; -fx-background-radius: 10px; -fx-border-color: #ffffff; -fx-border-width: 2px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.PatListStripController">
+   <children>
+      <Label fx:id="patientlistno" prefHeight="58.0" prefWidth="48.0" style="-fx-alignment: center;" text="Label" textFill="#183086" />
+      <Label fx:id="patientlistname" prefHeight="58.0" prefWidth="203.0" style="-fx-alignment: center; -fx-background-radius: 10px;" text="Label" textFill="#183086" />
+      <Label fx:id="patientlistcontact" prefHeight="58.0" prefWidth="125.0" style="-fx-alignment: center;" text="Label" textFill="#183086" />
+      <Label fx:id="patientlistage" prefHeight="58.0" prefWidth="73.0" style="-fx-alignment: center;" text="Label" textFill="#183086" />
+   </children>
+</HBox>

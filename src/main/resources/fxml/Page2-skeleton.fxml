@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDialog?>
+<?import com.jfoenix.controls.JFXDialogLayout?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.starttrial.controller.SkeletonController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1072.0">
+         <children>
+            <AnchorPane layoutX="196.0" layoutY="-1.0" prefHeight="720.0" prefWidth="872.0" style="-fx-background-color: #f8fbff;">
+               <children>
+                  <AnchorPane prefHeight="150.0" prefWidth="872.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="610.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dentist.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="683.0" layoutY="20.0" prefHeight="32.0" prefWidth="184.0" text="Dr. Rajashri Ghodke-Kale " textFill="#034b84">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="683.0" layoutY="52.0" prefHeight="22.0" prefWidth="184.0" text="BDS, MUHS, Pune Reg. No. A-32329" textFill="#034b84">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="makeappointmentbtn" layoutX="529.0" layoutY="96.0" mnemonicParsing="false" onAction="#makeapptfunc" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #153083; -fx-background-radius: 10px;" text="+ Make an Appointment" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="addpatientbtn" layoutX="737.0" layoutY="96.0" mnemonicParsing="false" onAction="#addpatientfunc" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #fc7d6e; -fx-background-radius: 10px;" text="+ New Patient" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="39.0" layoutY="25.0" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="39.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/search.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="searchbar" layoutX="47.0" layoutY="6.0" prefHeight="40.0" prefWidth="380.0" promptText="Who are you looking for?" style="-fx-background-color: #ffffff;">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="searchbtn" layoutX="427.0" layoutY="10.0" mnemonicParsing="false" onAction="#searchfunc" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #25a842;" text="Search" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="controlpaneshow" layoutY="150.0" prefHeight="570.0" prefWidth="872.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="-1.0" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <AnchorPane layoutX="-5.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/hospital%20logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="87.0" layoutY="26.0" prefHeight="32.0" prefWidth="90.0" text="Advanced" textFill="#034b84">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="87.0" layoutY="50.0" prefHeight="22.0" prefWidth="90.0" text="Dental Clinic" textFill="#034b84" />
+                        <Line endX="100.0" layoutX="101.0" layoutY="101.0" startX="-100.0" strokeWidth="0.5" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="dashboardbtn" layoutX="25.0" layoutY="144.0" mnemonicParsing="false" onAction="#opendashboardfunc" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #183086; -fx-border-radius: 10px; -fx-graphic-text-gap: 10;" text="Dashboard" textFill="#183086">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="appointmentsbtn" layoutX="25.0" layoutY="210.0" mnemonicParsing="false" onAction="#openapptsfunc" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #183086; -fx-border-radius: 10px; -fx-content-display: LEFT; -fx-graphic-text-gap: 10;" text="Appointments" textFill="#183086">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/appointment.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="logoutbtn" layoutX="25.0" layoutY="640.0" mnemonicParsing="false" onAction="#logoutfunc" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #183086; -fx-border-radius: 10px; -fx-content-display: LEFT; -fx-graphic-text-gap: 10;" text="Log Out" textFill="#183086">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/log%20out.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXDialog fx:id="makeapptdialog" prefHeight="450.0" prefWidth="600.0">
+         <JFXDialogLayout>
+            <body>
+
+            </body>
+         </JFXDialogLayout>
+      </JFXDialog>
+      <JFXDialog fx:id="patdetdialog" prefHeight="650.0" prefWidth="785.0">
+         <JFXDialogLayout>
+            <body>
+
+            </body>
+         </JFXDialogLayout>
+      </JFXDialog>
+   </children>
+</StackPane>
